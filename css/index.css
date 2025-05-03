@@ -5,6 +5,19 @@
   --dark: #212529;
   --light: #f8f9fa;
   --success: #28a745;
+
+  --light-gray: #f8f9f9;
+  --medium-gray: #bdc3c7;
+
+  --nav-bg-color: #2c3e50;
+  --nav-text-color: #ecf0f1;
+
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Lato', sans-serif;
+
+  --shadow-light: 0 4px 10px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 6px 15px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -464,4 +477,123 @@ footer a {
     transform: translateY(-3px);
   }
   
+
+  /* --- Utilidades --- */
+.text-center { text-align: center; }
+.bg-light { background-color: var(--light-gray); }
+.hidden { opacity: 0.75; transform: translateY(30px); } /* Aumentar desplazamiento inicial */
+.visible { opacity: 1; transform: translateY(0); transition: opacity 0.8s ease-out, transform 0.8s ease-out; } /* Animación más suave */
+a { text-decoration: none; color: var(--primary); transition: color 0.3s ease; }
+a:hover { color: var(--secondary); }
+
+.container2 { max-width: 1140px; margin: 20px auto; padding: 0 20px; }
+  
+  /* --- Sección Blog --- */
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 2.5rem; margin-top: 3rem; }
+.blog-post-preview { background-color: var(--light); border-radius: 10px; overflow: hidden; box-shadow: var(--shadow-light); transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid #e0e0e0; display: flex; flex-direction: column; }
+.blog-post-preview:hover { transform: translateY(-8px); box-shadow: var(--shadow-medium); }
+.blog-post-image { height: 200px; background-color: var(--light-gray); overflow: hidden; }
+.blog-post-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.blog-post-preview:hover .blog-post-image img { transform: scale(1.05); }
+.blog-post-content { padding: 1.8rem; flex-grow: 1; display: flex; flex-direction: column; }
+.blog-post-content h4 { margin-bottom: 0.6rem; line-height: 1.4; }
+.blog-post-content h4 a { color: var(--dark); font-size: 1.25rem; }
+.blog-post-content h4 a:hover { color: var(--primary); }
+.blog-post-meta { font-size: 0.9rem; color: var(--medium-gray); margin-bottom: 1.2rem; }
+.blog-post-meta i { margin-right: 6px; }
+.blog-post-excerpt { font-size: 1rem; margin-bottom: 1.5rem; flex-grow: 1; }
+
+.read-more-link { font-weight: 600; color: var(--primary); font-size: 0.95rem; margin-top: auto; align-self: flex-start; } /* Alinea abajo a la izquierda */
+.read-more-link:hover { text-decoration: underline; }
+.read-more-link i { margin-left: 6px; transition: transform 0.3s ease; }
+.read-more-link:hover i { transform: translateX(4px); }
+
+.read-less-link { font-weight: 600; color: var(--primary); font-size: 0.95rem; margin-top: auto; align-self: flex-start; } /* Alinea abajo a la izquierda */
+.read-less-link:hover { text-decoration: underline; }
+.read-less-link i { margin-left: 6px; transition: transform 0.3s ease; }
+.read-less-link:hover i { transform: translateX(-4px); }
+
+
+
+/* --- Sección blog --- */
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+
+h2 {
+  color:#476686;;
+  margin-top: 30px;
+  border-bottom: 1px solid #bdc3c7;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #2980b9;
+  margin-top: 20px;
+}
+
+
+/* --- Sección Preguntas frecuentes --- */
+
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+
+.faq-question {
+  font-weight: bold;
+  color: #3498db;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  cursor: pointer; /* Optional: for potential JS toggle */
+}
+
+.faq-answer {
+  /* display: none; */ /* Optional: for JS toggle */
+  padding-left: 10px;
+  border-left: 3px solid #bdc3c7;
+}
+
+.faq-answer p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  font-weight: bold;
+  color: #555;
+}
+
+code {
+  background-color: #e8e8e8;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.95em;
+}
 

@@ -101,7 +101,7 @@ function sendFormData() {
                 }
             });
         } else {
-            Swal({
+            swal({
                 title: "Error",
                 text: "El correo no pudo ser enviado. Por favor, intenta nuevamente.",
                 icon: "error",

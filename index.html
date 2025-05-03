@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/index.css">
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LKY5VL4GSZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -21,50 +20,54 @@
   </script>
 </head>
 <body>
-  
-<div class="container-fluid fixed-top navbar-light">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg" id="navbar">
-    <div class="container">
-      <a class="navbar-brand" href="#inicio">
-        <img src="img/logo-factura50.png" alt="Logotipo Factura50">
-      </a>
-      
-      <div class="d-flex d-lg-none align-items-center">
-        <a href="crearcuenta.html" class="btn btn-sm btn-primary me-3" target="_blank">Crear cuenta</a>
-        <div class="mobile-toggle" id="mobile-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#inicio">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#planes-facturacion-electronica-ecuador">Planes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#acerca">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-          <li class="nav-item ms-lg-3">
-            <a href="crearcuenta.html" class="btn btn-primary" target="_blank">Crear cuenta</a>
-          </li>
-          <li class="nav-item ms-lg-2">
-            <a href="app/index.php" class="btn btn-outline-primary" target="_blank">Iniciar sesión</a>
-          </li>
-        </ul>
-      </div>
 
-    </div>
-  </nav>
-</div>
+  <!-- Menu Section -->
+  <div class="container-fluid fixed-top navbar-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">
+          <img src="img/logo-factura50.png" alt="Logotipo Factura50">
+        </a>
+        
+        <div class="d-flex d-lg-none align-items-center">
+          <a href="crearcuenta.html" class="btn btn-sm btn-primary me-3" target="_blank">Crear cuenta</a>
+          <div class="mobile-toggle" id="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#planes-facturacion-electronica-ecuador">Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#acerca">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a href="crearcuenta.html" class="btn btn-primary" target="_blank">Crear cuenta</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a href="app/index.php" class="btn btn-outline-primary" target="_blank">Iniciar sesión</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </div>
 
   <!-- Hero Section -->
   <section class="hero" id="inicio">
@@ -348,7 +351,7 @@
     </div>
   </section>
   
-  <!-- NOSTROS SECTION -->
+  <!-- About Section -->
   <section class="section" id="acerca">
     <div class="container">
       <div class="text-center mb-5">
@@ -403,7 +406,398 @@
     </div>
   </section>
 
-  <!-- CONTACTO SECTION -->
+  <!-- Blog Section -->
+  <section id="blog" class="section">
+      <div class="container">
+          <h2 class="fw-bold mb-3 text-center">Blog</h2>
+          <p class="text-center hidden" style="margin-top: -2rem; margin-bottom: 3.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">Análisis de la Facturación Electrónica en Ecuador: Implementación, Requisitos y Beneficios según Fuentes del SRI y Proveedores Autorizados.</p>
+          <div class="blog-grid">
+              <div class="blog-post-preview hidden">
+                  <div class="blog-post-content">
+                      <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> 15 Enero, 2024</p>
+                      <h4><a href="javascript:void(0);" onClick="showBlog(1);">Facturación Electrónica en Ecuador</a></h4>
+                      <p class="blog-post-excerpt">En el panorama empresarial moderno de Ecuador, la adopción de herramientas tecnológicas eficientes es fundamental para optimizar los procesos y garantizar la competitividad ...</p>
+                      <a href="javascript:void(0);" onClick="showBlog(1);" class="read-more-link">Leer Más <i class="fas fa-arrow-right"></i></a>
+                  </div>
+              </div>
+              <div class="blog-post-preview hidden">
+                  <div class="blog-post-content">
+                      <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> 28 Febrero, 2024</p>
+                      <h4><a href="javascript:void(0);" onClick="showBlog(2);">Preguntas Frecuentes</a></h4>
+                      <p class="blog-post-excerpt">¿Qué es la facturación electrónica en Ecuador y por qué es obligatoria?<br>
+                        La facturación electrónica es un sistema que permite emitir, enviar, recibir y almacenar comprobantes de venta ...</p>
+                      <a href="javascript:void(0);" onClick="showBlog(2);" class="read-more-link">Leer Más <i class="fas fa-arrow-right"></i></a>
+                  </div>
+              </div>
+              <div class="blog-post-preview hidden">
+                  <div class="blog-post-content">
+                      <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> 31 Marzo, 2025</p>
+                      <h4><a href="javascript:void(0);" onClick="showBlog(3);"> Podcast - Facturación Electrónica</a></h4>
+                      <p class="blog-post-excerpt">Este podcast resume los puntos clave y las directrices esenciales para comprender y utilizar el sistema de facturación electrónica en Ecuador, según la información del SRI.</p>
+                      <audio src="Guia-Facturacion-Electronica-Ecuador.wav" controls></audio>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="container" id="blog-post-1" style="display:none;margin-top:100px;">
+        <div class="text-center">
+          <h1>Análisis de la Facturación Electrónica en Ecuador: Implementación, Requisitos y Beneficios según Fuentes del SRI</h1>
+        </div>
+        <section id="introduccion">
+            <br>
+            <h2>Introducción</h2>
+            <br>
+            <p>
+                En el panorama empresarial moderno de Ecuador, la adopción de herramientas tecnológicas eficientes es fundamental para optimizar los procesos y garantizar la competitividad. La facturación electrónica ha revolucionado las operaciones contables, migrando de lo tradicional a lo digital. Este sistema se ha convertido en un requisito indispensable para los contribuyentes, facilitando transacciones comerciales y asegurando la transparencia y eficiencia en el cumplimiento tributario. La transición hacia la factura electrónica es una necesidad imperiosa, no solo por su conveniencia y eficiencia, sino también por los requisitos normativos que exigen su implementación en Ecuador.
+            </p>
+        </section>
+    
+        <section id="definicion">
+            <h2>1. Definición de Facturación Electrónica</h2>
+            <p>
+                La facturación electrónica es el sistema que permite emitir comprobantes de venta, retención y documentos complementarios en formato digital. Cumple con los requisitos legales y reglamentarios exigibles para su autorización por parte del Servicio de Rentas Internas (SRI), garantizando la autenticidad de su origen e integridad de su contenido. Esto se logra mediante la inclusión de la firma electrónica del emisor en cada comprobante. La factura electrónica tiene la misma validez legal que los documentos físicos en papel. Se emite y recibe en formato digital, sin necesidad de imprimirse en papel. El documento contiene la misma información que una factura tradicional. En esencia, implica la generación, el envío, la recepción y el almacenamiento de facturas en formato digital, de acuerdo con estándares técnicos y regulatorios específicos.
+            </p>
+            <p>
+                Un comprobante electrónico es aquel documento que da soporte a las ventas y movimientos financieros, 100% avalado por el SRI y que cumple con todos los requisitos legales. Tiene validez legal siempre que contenga una firma electrónica.
+            </p>
+        </section>
+    
+        <section id="importancia-beneficios">
+            <h2>2. Importancia y Beneficios Clave de la Facturación Electrónica</h2>
+            <p>
+                Adoptar la facturación electrónica es una necesidad para mantenerse competitivo y cumplir con las normativas fiscales del país. No solo es un requisito del SRI, sino que también aporta ventajas operativas significativas. Su implementación moderniza y optimiza los procesos fiscales, reduce el uso de papel y facilita el control tributario por parte del SRI.
+            </p>
+            <h3>Los beneficios clave incluyen:</h3>
+            <ul>
+                <li><strong>Reducción de costos:</strong> Elimina gastos asociados con la impresión, el envío y el almacenamiento de facturas en papel, así como costos de procesamiento manual. Se ahorra dinero en papel, procesos de impresión, almacenamiento y envío.</li>
+                <li><strong>Ahorro de tiempo:</strong> Automatiza el proceso de facturación, reduciendo el tiempo dedicado a la preparación, envío y seguimiento. La generación, emisión y envío es más ágil.</li>
+                <li><strong>Mayor eficiencia:</strong> Agiliza el flujo de información, mejora la gestión de pagos y cobros, y la planificación financiera. Los procesos administrativos son más rápidos. Permite dedicar más tiempo a tareas estratégicas.</li>
+                <li><strong>Mejora de la precisión:</strong> Minimiza la intervención humana, reduciendo errores de entrada de datos.</li>
+                <li><strong>Cumplimiento normativo simplificado:</strong> Ayuda a cumplir con requisitos legales y fiscales. Facilita la gestión tributaria y auditoría.</li>
+                <li><strong>Seguridad y autenticidad:</strong> Cuentan con elementos de seguridad como firmas digitales, códigos <code>QR</code> o sellos de tiempo. Garantizan autenticidad, integridad y evitan alteraciones. Protege contra fraude y falsificación.</li>
+                <li><strong>Contribución al medio ambiente:</strong> Reduce el uso de papel, apoyando la sostenibilidad ambiental.</li>
+                <li><strong>Mejora la trazabilidad:</strong> Mayor control sobre las facturas emitidas.</li>
+                <li><strong>Facilita el acceso digital:</strong> Permite almacenar y consultar documentos fácilmente.</li>
+            </ul>
+        </section>
+    
+        <section id="requisitos">
+            <h2>3. Requisitos para Facturar Electrónicamente</h2>
+            <p>
+                Para implementar la factura electrónica, es necesario cumplir con requisitos técnicos y legales.
+            </p>
+            <h3>Requisitos Legales:</h3>
+            <ul>
+                <li><strong>RUC activo:</strong> Indispensable para cualquier persona o empresa que desee emitir facturas electrónicas.</li>
+                <li><strong>Firma electrónica:</strong> Esencial y obligatorio para validar la autenticidad e integridad de los documentos emitidos. Reemplaza a la firma escrita. Debe obtenerse a través de una entidad certificadora autorizada.</li>
+                <li><strong>Autorización del SRI:</strong> Se debe solicitar autorización para emitir comprobantes electrónicos a través de la plataforma del SRI.</li>
+                <li><strong>Software autorizado:</strong> Se debe utilizar un software que genere comprobantes electrónicos. Puede ser propio o de un proveedor tecnológico autorizado y homologado por el SRI.</li>
+                <li><strong>Formato XML:</strong> Los comprobantes electrónicos deben estar en formato <code>XML</code>, que permite la transmisión segura y estructurada de la información. Debe cumplir con la estructura establecida por el SRI. Es obligatorio incluir la etiqueta <code>XML</code>.</li>
+                <li><strong>Código QR:</strong> Es necesario incluir un código <code>QR</code> en los documentos impresos (RIDE).</li>
+                <li><strong>Consentimiento del receptor:</strong> Se debe obtener el permiso o consentimiento del receptor antes de emitir y enviar la factura electrónica.</li>
+                <li><strong>Clave de acceso al SRI en Línea:</strong> Necesaria para emitir y descargar comprobantes electrónicos.</li>
+                <li><strong>Convenio de débito registrado:</strong> A veces requerido para poder solicitar la emisión de comprobantes.</li>
+                <li><strong>Conservación:</strong> Es obligatorio almacenar las facturas durante 7 años. Deben estar disponibles para consulta en formato digital.</li>
+            </ul>
+            <h3>Requisitos Técnicos y Tecnológicos:</h3>
+            <ul>
+                <li><strong>Certificado digital de firma electrónica:</strong> Documento electrónico que identifica al titular y valida la firma.</li>
+                <li><strong>Software de facturación electrónica:</strong> Herramienta que permite generar, enviar y almacenar facturas electrónicas.</li>
+                <li><strong>Conexión a Internet:</strong> Necesaria para enviar y recibir facturas de manera eficiente.</li>
+                <li><strong>Formato XML:</strong> Asegura que los datos viajen con mayor seguridad.</li>
+                <li><strong>Integración con sistemas del SRI:</strong> El software debe ser compatible con los servicios web del SRI para la emisión y recepción.</li>
+                <li><strong>Seguridad de datos:</strong> La plataforma debe garantizar la seguridad.</li>
+            </ul>
+        </section>
+    
+        <section id="obligados">
+            <h2>4. Quiénes Están Obligados a Facturar Electrónicamente</h2>
+            <p>
+                La implementación del Sistema de Facturación Electrónica en Ecuador se hizo obligatoria desde 2014, con el objetivo de que para 2024 todas las entidades obligadas estén adaptadas. A partir de noviembre de 2022, se hizo obligatorio para la mayoría de los contribuyentes.
+            </p>
+            <p><strong>Están obligados:</strong></p>
+            <ul>
+                <li>Personas en el régimen general.</li>
+                <li>Personas en RIMPE Emprendedores (ingresos anuales entre USD 20.000,01 y USD 300.000,00).</li>
+                <li>Agentes de retención (a partir del 30 de noviembre de 2022).</li>
+                <li>Aquellas empresas con transacciones con el Estado entre USD 200.000,01 y USD 300.000,00 en la actividad fiscal anterior.</li>
+            </ul>
+            <p class="exception-note"><strong>Excepción:</strong></p>
+            <ul>
+                <li>RIMPE Negocios Populares (ingresos anuales entre USD 0 y USD 20.000,00) no tienen que acogerse a la facturación electrónica, emiten notas de ventas físicas.</li>
+            </ul>
+            <p class="exception-note"><strong>Excepción a la excepción:</strong></p>
+            <ul>
+                <li>RIMPE Negocios Populares deben emitir facturas electrónicas si tienen actividades económicas excluyentes del RIMPE dentro de su RUC. Ejemplos de actividades excluyentes mencionadas incluyen construcción, servicios profesionales, actividades agropecuarias, transporte y rentas de capital (alquiler de bienes inmuebles).</li>
+            </ul>
+            <p>
+                En casos extraordinarios (ej. falta de luz o internet), se permite emitir documentos físicos, pero no deben superar el 1% de los comprobantes emitidos en el último período fiscal. Las facturas físicas emitidas antes del 10 de junio de 2022 tuvieron validez hasta el 9 de junio de 2023. Las emitidas después del 10 de junio de 2022 tienen validez hasta su fecha de caducidad (regularmente un año) o hasta el 29 de noviembre (ya que el 30 de noviembre se convirtió en la fecha obligatoria para la mayoría). Estas facturas físicas no caducadas solo pueden usarse en casos excepcionales.
+            </p>
+        </section>
+    
+        <section id="elementos-comprobante">
+            <h2>5. Elementos de un Comprobante Electrónico Válido</h2>
+            <p>
+                Para ser válida ante el SRI, una factura electrónica debe incluir elementos indispensables:
+            </p>
+            <ul>
+                <li><strong>Datos del emisor:</strong> Nombre o razón social, número de RUC, dirección del establecimiento, número de autorización emitido por el SRI.</li>
+                <li><strong>Datos del receptor:</strong> Nombre completo o razón social, número de identificación (cédula, RUC o pasaporte), dirección fiscal (opcional).</li>
+                <li><strong>Detalle de los bienes o servicios:</strong> Código, nombre, cantidad, precio unitario, precio total. Se puede incluir información adicional. También se puede otorgar un descuento.</li>
+                <li><strong>Impuestos:</strong> IVA, ICE (si aplica), otros impuestos definidos por la ley. Se selecciona la tarifa de IVA del producto/servicio. Si graba ICE, se selecciona el tipo de producto.</li>
+                <li><strong>Información de la transacción:</strong> Fecha de emisión, número de factura (secuencial), forma de pago utilizada (efectivo, transferencia, tarjeta, etc.).</li>
+                <li><strong>Firma electrónica:</strong> El comprobante debe contener una firma electrónica que garantiza su autenticidad e integridad.</li>
+                <li><strong>Número de autorización (Clave de Acceso):</strong> Un código único de autorización es obligatorio. En el esquema Off line, el número de autorización y la clave de acceso son el mismo número de 49 dígitos.</li>
+                <li><strong>Formato XML:</strong> El documento debe estar en formato <code>XML</code>.</li>
+                <li><strong>Código QR:</strong> Para los documentos impresos (RIDE).</li>
+                <li><strong>Campo especial:</strong> Existe la posibilidad de añadir un campo especial con información complementaria.</li>
+            </ul>
+        </section>
+    
+        <section id="tipos-comprobantes">
+            <h2>6. Tipos de Comprobantes que se Pueden Emitir Electrónicamente</h2>
+            <p>
+                La facturación electrónica no se limita únicamente a las facturas. Otros documentos que se pueden emitir electrónicamente son:
+            </p>
+            <ul>
+                <li><strong>Facturas:</strong> Emitidas en transacciones comerciales B2G/B2B/B2C.</li>
+                <li><strong>Liquidaciones de compras de bienes y prestación de servicios:</strong> Utilizadas para justificar compras/servicios a proveedores que no pueden emitir facturas.</li>
+                <li><strong>Notas de crédito:</strong> Permiten anular o modificar valores facturados (ej. corrección de errores, devolución, descuentos posteriores).</li>
+                <li><strong>Notas de débito:</strong> Utilizadas para recuperar costos/gastos o cobrar intereses por mora. Deben referenciar la factura original.</li>
+                <li><strong>Comprobantes de retención:</strong> Documento para registrar retenciones de impuestos (ej. retención a proveedores).</li>
+                <li><strong>Guías de remisión:</strong> Documento que respalda el traslado de bienes. Debe contener detalles del transporte y los productos.</li>
+            </ul>
+        </section>
+    
+        <section id="pasos-implementacion">
+            <h2>7. Pasos para Implementar la Facturación Electrónica</h2>
+            <p>
+                Empezar a facturar electrónicamente es un proceso bastante sencillo y rápido. Los pasos principales son:
+            </p>
+            <ol>
+                <li><strong>Registro en el portal del SRI y obtención de credenciales:</strong> Asegurarse de estar registrado en el SRI. Acceder a la página web, crear o actualizar la cuenta y obtener la clave de acceso a SRI en Línea.</li>
+                <li><strong>Gestión de la firma electrónica:</strong> Obtener la firma electrónica a través de una entidad certificadora autorizada. El proceso implica identificación, presentación de documentación, solicitud y generación del certificado, instalación de software/token y configuración con clave.</li>
+                <li><strong>Selección e implementación de un software de facturación electrónica:</strong> Necesitar un software autorizado por el SRI. Se debe buscar uno que cumpla requisitos técnicos y normativos. Integrar el sistema con los servicios web del SRI. Se pueden cargar productos y clientes de manera individual o masiva.</li>
+                <li><strong>Realizar las sesiones de pruebas online ("Ambiente de Prueba"):</strong> Realizar las pruebas obligatorias en la sección del SRI llamada "Ambiente de Prueba". Este entorno simula la emisión de comprobantes sin validez tributaria. Permite verificar que la información cumpla especificaciones técnicas. Se puede usar el tiempo que sea necesario.</li>
+                <li><strong>Conseguir la autorización oficial ("Ambiente de Producción"):</strong> Una vez pasadas las pruebas, solicitar la autorización para emitir comprobantes en el "Ambiente de Producción". Esto se hace a través del portal del SRI. Los comprobantes emitidos en este ambiente tienen validez tributaria. La aprobación tiene vigencia indefinida.</li>
+                <li><strong>Configuración del sistema:</strong> Configurar el software con los datos de la empresa, productos, servicios y parámetros fiscales. Cargar la firma electrónica en el sistema.</li>
+                <li><strong>Emisión y envío de comprobantes:</strong> Acceder al software, ingresar datos del cliente, detallar productos/servicios, seleccionar forma de pago, generar y firmar el documento. Enviar la factura al SRI para validación. Una vez autorizada por el SRI, enviar el comprobante electrónico al cliente (generalmente por email).</li>
+                <li><strong>Almacenamiento:</strong> Guardar el documento digital y su respaldo técnico por 7 años.</li>
+            </ol>
+        </section>
+    
+        <section id="anulacion">
+            <h2>8. Anulación de Comprobantes Electrónicos</h2>
+            <p>
+                La anulación de comprobantes se realiza electrónicamente a través del sistema. Existen dos tipos de anulación según el documento:
+            </p>
+            <ul>
+                <li><strong>Sin confirmación del receptor:</strong> Para Facturas, Guías de Remisión y Liquidaciones de Bienes. La anulación se realiza unilateralmente en el sistema del emisor.</li>
+                <li><strong>Con confirmación del receptor:</strong> Para Notas de Crédito/Débito y Comprobantes de Retención. El emisor solicita la anulación y el cliente o proveedor debe confirmarla en su sistema. Si la otra parte no confirma, el proceso queda en espera.</li>
+            </ul>
+            <p>Los emisores tienen hasta 90 días después de la emisión para ingresar la anulación de un comprobante electrónico.</p>
+        </section>
+    
+        <section id="ride">
+            <h2>9. El RIDE (Representación Impresa del Documento Electrónico)</h2>
+            <p>
+                El RIDE es un formato de representación impresa amigable de un documento electrónico que debe cumplir con las reglas del reglamento. Se genera simultáneamente con el documento <code>XML</code>. Es importante señalar que los receptores deben haber dado su consentimiento para recibir comprobantes electrónicos. El RIDE debe ser impreso y entregado si:
+            </p>
+            <ul>
+                <li>No existe consentimiento del usuario para recibirlo electrónicamente.</li>
+                <li>El receptor lo solicita expresamente.</li>
+                <li>No se identifica al consumidor (venta a consumidor final).</li>
+                <li>El comprobante con el cliente no tiene un correo electrónico.</li>
+            </ul>
+        </section>
+    
+        <section id="sanciones">
+            <h2>10. Sanciones por Incumplimiento</h2>
+            <p>
+                La facturación electrónica es una obligación indispensable, y su incumplimiento puede acarrear sanciones significativas. El SRI busca modernizar y optimizar los procesos fiscales mediante este sistema. Las sanciones pueden incluir:
+            </p>
+            <ul>
+                <li><strong>Multas:</strong> Sanciones económicas por no emitir facturas electrónicas.</li>
+                <li><strong>Clausura del establecimiento:</strong> El incumplimiento puede resultar en la clausura temporal o definitiva del negocio.</li>
+                <li><strong>Proceso penal:</strong> En casos graves de evasión fiscal o fraude, puede derivar en investigaciones, arrestos y penas de cárcel.</li>
+                <li><strong>Pérdida de beneficios tributarios:</strong> No emitir facturas electrónicas puede llevar a la pérdida de exenciones o incentivos fiscales.</li>
+            </ul>
+            <p>
+                Para evitar sanciones, se recomienda implementar sistemas confiables y autorizados, capacitar al personal, revisar periódicamente los procesos y buscar asesoría especializada.
+            </p>
+        </section>
+    
+        <section id="conclusiones">
+            <h2>11. Conclusiones</h2>
+            <p>
+                La facturación electrónica en Ecuador es un sistema que ha migrado de ser una opción a una obligación generalizada para la mayoría de los contribuyentes a partir de noviembre de 2022. Está respaldada por requisitos legales y técnicos claros definidos por el SRI, como el RUC activo, la firma electrónica obligatoria, el uso de software autorizado y la obtención de autorización oficial tras pasar por un ambiente de pruebas. Este sistema no solo cumple con la normativa fiscal, sino que ofrece beneficios sustanciales para las empresas, incluyendo la reducción de costos y tiempo, mayor eficiencia, precisión, seguridad y trazabilidad. Además de facturas, permite la emisión de otros comprobantes esenciales como notas de crédito/débito, guías de remisión y comprobantes de retención. La transición implica pasos definidos, desde el registro inicial y la obtención de la firma electrónica hasta la selección del software, las pruebas y la autorización en producción. El cumplimiento es vital, ya que el incumplimiento puede acarrear sanciones severas, incluyendo multas y clausura.
+            </p>
+        </section>
+    
+        <section id="recomendaciones">
+            <h2>12. Recomendaciones</h2>
+            <p>
+                Basado en la información de las fuentes:
+            </p>
+            <ul>
+                <li><strong>Iniciar la transición lo antes posible:</strong> No esperar a la fecha límite si aún no se es facturador electrónico.</li>
+                <li><strong>Obtener la firma electrónica:</strong> Es un requisito indispensable y un primer paso clave.</li>
+                <li><strong>Seleccionar un software confiable y autorizado:</strong> Elegir una plataforma que cumpla con los requisitos del SRI, sea fácil de usar y ofrezca funcionalidades que se adapten a las necesidades del negocio. Considerar proveedores que ofrezcan soporte y guías.</li>
+                <li><strong>Utilizar el ambiente de pruebas:</strong> Aprovechar este entorno para familiarizarse con el sistema y corregir errores antes de operar en producción. Se puede usar el tiempo que se necesite.</li>
+                <li><strong>Capacitar al personal:</strong> Asegurarse de que el equipo conozca el proceso y el uso del software para evitar errores. Crear guías claras.</li>
+                <li><strong>Mantenerse informado:</strong> Consultar regularmente las actualizaciones de la normativa fiscal del SRI.</li>
+                <li><strong>Asegurar el almacenamiento digital:</strong> Garantizar la conservación segura de los documentos electrónicos por el período legal de 7 años.</li>
+                <li><strong>Considerar asesoría especializada:</strong> Si la gestión fiscal es un desafío, el apoyo de profesionales puede ser de gran ayuda.</li>
+            </ul>
+            <p>
+                La facturación electrónica es un paso esencial hacia la modernización empresarial en Ecuador, simplificando procesos, garantizando el cumplimiento y posicionando a las empresas para un crecimiento sostenible.
+            </p>
+        </section>
+
+                <a href="javascript:void(0);" onClick="hideBlog(1);" class="read-less-link">Regresar <i class="fas fa-arrow-left"></i></a>
+      </div>
+
+
+      <div class="container" id="blog-post-2" style="display:none;margin-top:100px;">
+        <br>
+        <h1>Preguntas Frecuentes: Facturación Electrónica en Ecuador</h1>
+        <br>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Qué es la facturación electrónica en Ecuador y por qué es obligatoria?</div>
+            <div class="faq-answer">
+                <p>
+                    La facturación electrónica es un sistema que permite emitir, enviar, recibir y almacenar comprobantes de venta, retención y otros documentos en formato digital (principalmente <code>XML</code>), los cuales tienen la misma validez legal que los documentos físicos. Cumple con los requisitos legales y reglamentarios del Servicio de Rentas Internas (<code>SRI</code>), garantizando la autenticidad e integridad mediante la <strong>firma electrónica</strong> del emisor.
+                </p>
+                <p>
+                    La obligatoriedad para la mayoría de los contribuyentes en Ecuador entró en vigor a partir de <strong>noviembre de 2022</strong>, aunque su implementación se inició de manera progresiva desde 2014 para ciertos sectores económicos y entidades públicas, con el objetivo de modernizar y optimizar los procesos fiscales, reducir costos y el uso de papel, mejorar la eficiencia y seguridad de las transacciones.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Qué documentos se pueden emitir electrónicamente además de facturas?</div>
+            <div class="faq-answer">
+                <p>
+                    Además de las facturas electrónicas, el sistema permite la emisión de otros comprobantes y documentos complementarios esenciales en formato digital. Estos incluyen:
+                </p>
+                <ul>
+                    <li><strong>Notas de crédito y débito:</strong> Utilizadas para ajustes o devoluciones en facturas previamente emitidas.</li>
+                    <li><strong>Guías de remisión:</strong> Para justificar el transporte de mercadería.</li>
+                    <li><strong>Liquidaciones de compra de bienes y prestación de servicios:</strong> Utilizadas en casos específicos, como la compra a proveedores informales.</li>
+                    <li><strong>Comprobantes de retención:</strong> Emitidos por agentes de retención.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Cuáles son los requisitos fundamentales para empezar a emitir comprobantes electrónicos?</div>
+            <div class="faq-answer">
+                <p>
+                    Para iniciar la emisión de comprobantes electrónicos en Ecuador, se requieren varios elementos clave:
+                </p>
+                <ul>
+                    <li>Tener el <strong><code>RUC</code></strong> (Registro Único de Contribuyentes) <strong>activo</strong>.</li>
+                    <li>Obtener una <strong>firma electrónica</strong> (un certificado digital que garantiza la autenticidad).</li>
+                    <li>Contar con una <strong>clave de acceso</strong> a los servicios en línea del <code>SRI</code>.</li>
+                    <li>Obtener la <strong>autorización oficial del <code>SRI</code></strong> para emitir comprobantes electrónicos en el <strong>ambiente de producción</strong>.</li>
+                </ul>
+                <p>
+                    Es necesario pasar primero por un <strong>"ambiente de pruebas"</strong> para validar el funcionamiento del sistema antes de operar con validez tributaria.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo se obtiene la autorización del SRI para emitir comprobantes electrónicos?</div>
+            <div class="faq-answer">
+                <p>
+                    El proceso para obtener la autorización del <code>SRI</code> implica varios pasos a través de su portal en línea. Primero, el contribuyente debe asegurarse de estar registrado en el <code>SRI</code> y tener su clave de acceso. Luego, debe solicitar la autorización ingresando a la sección de "Facturación Electrónica".
+                </p>
+                <p>
+                    Antes de operar en el <strong>"ambiente de producción"</strong> con validez tributaria, es <strong>obligatorio realizar pruebas</strong> en el <strong>"ambiente de pruebas"</strong> para asegurar que el sistema funciona correctamente y que la información cumple con las especificaciones técnicas. Una vez superadas las pruebas, se solicita la autorización en el ambiente de producción.
+                </p>
+                <p>
+                    Si al solicitar la autorización aparece un error indicando la falta de un <strong>convenio de débito aprobado</strong>, se debe registrar una cuenta bancaria del negocio en la opción "Pagos" y luego "Registro de débito bancario" en el portal del <code>SRI</code>.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Qué es el RIDE y cuándo es necesario entregarlo?</div>
+            <div class="faq-answer">
+                <p>
+                    El <strong><code>RIDE</code></strong> (Representación Impresa del Documento Electrónico) es un formato amigable para la representación impresa de un comprobante electrónico. Aunque la emisión es digital, el <code>RIDE</code> debe generarse y ser <strong>impreso y entregado</strong> al receptor en ciertas situaciones:
+                </p>
+                <ul>
+                    <li>Cuando el receptor <strong>no ha dado su consentimiento</strong> para recibir los comprobantes electrónicamente.</li>
+                    <li>Si el receptor lo <strong>solicita explícitamente</strong>.</li>
+                    <li>En el caso de ventas a <strong>consumidores finales</strong> donde no se identifica al comprador.</li>
+                    <li>Si el comprobante <strong>no incluye el correo electrónico</strong> del cliente.</li>
+                </ul>
+                <p>
+                    El <code>RIDE</code> no tiene validez tributaria por sí solo; el documento válido es el archivo <code>XML</code> autorizado por el <code>SRI</code>. Para ser válido, el <code>RIDE</code> debe incluir el número de autorización (clave de acceso) del comprobante electrónico, que es un código de <strong>49 dígitos</strong>.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Cómo se anula un comprobante electrónico y cuál es el plazo para hacerlo?</div>
+            <div class="faq-answer">
+                <p>
+                    La anulación de comprobantes electrónicos se realiza a través del sistema electrónico. Existen dos tipos de anulación:
+                </p>
+                <ul>
+                    <li><strong>Sin confirmación del receptor:</strong> Para Facturas, Guías de Remisión y Liquidaciones de Bienes. El emisor realiza la anulación unilateralmente en su sistema.</li>
+                    <li><strong>Con confirmación del receptor:</strong> Para Notas de Crédito/Débito y Comprobantes de Retención. El emisor solicita la anulación y el cliente o proveedor debe confirmarla en su sistema; si no hay confirmación, el proceso queda pendiente.</li>
+                </ul>
+                <p>
+                    Los emisores tienen un plazo de hasta <strong>90 días</strong> después de la emisión para ingresar la solicitud de anulación de un comprobante electrónico.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Cuáles son los beneficios de la facturación electrónica?</div>
+            <div class="faq-answer">
+                <p>
+                    La implementación de la facturación electrónica ofrece múltiples beneficios para las empresas y contribuyentes. Entre ellos se destacan:
+                </p>
+                <ul>
+                    <li><strong>Reducción de costos:</strong> Elimina la necesidad de impresión, almacenamiento físico y envío postal.</li>
+                    <li><strong>Ahorro de tiempo y mejora de la eficiencia:</strong> Automatiza procesos.</li>
+                    <li><strong>Mayor precisión:</strong> Menos errores manuales en la información fiscal.</li>
+                    <li><strong>Seguridad mejorada:</strong> Mediante la firma electrónica y la validación del <code>SRI</code>.</li>
+                    <li><strong>Trazabilidad:</strong> Mejor seguimiento de las transacciones.</li>
+                    <li><strong>Sostenibilidad ambiental:</strong> Disminuye el uso de papel.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">¿Qué sanciones existen por no cumplir con la obligación de facturar electrónicamente?</div>
+            <div class="faq-answer">
+                <p>
+                    El incumplimiento de la obligación de emitir facturas electrónicas en Ecuador puede acarrear <strong>sanciones significativas</strong> impuestas por el <code>SRI</code>. Estas sanciones buscan asegurar la correcta implementación del sistema y combatir la evasión fiscal. Pueden incluir:
+                </p>
+                <ul>
+                    <li><strong>Multas económicas:</strong> Varían según el tipo de contribuyente (desde <code>USD 30</code> hasta 30 remuneraciones básicas unificadas para contribuyentes especiales).</li>
+                    <li><strong>Clausura temporal o definitiva</strong> del establecimiento.</li>
+                    <li>En casos graves, <strong>procesos penales</strong>.</li>
+                </ul>
+                <p>
+                    Para evitar estas sanciones, es crucial cumplir con los requisitos, utilizar sistemas autorizados, capacitar al personal y asegurar que todos los comprobantes obligatorios se emitan electrónicamente.
+                </p>
+            </div>
+        </div>
+
+        <a href="javascript:void(0);" onClick="hideBlog(2);" class="read-less-link">Regresar <i class="fas fa-arrow-left"></i></a>
+      </div>
+
+  </section>
+
+  <!-- Contac Section -->
   <section class="container-fluid py-5" id="contacto">
     <div class="container mt-5">
       <div class="text-center mb-5">
@@ -484,13 +878,13 @@
     </div>
   </section>
 
-<div class="p-5">
-  <br>
-  <br>
-  
-</div>
+  <!-- Divider Section -->
+  <div class="p-5">
+    <br>
+    <br>
+  </div>
 
-<!-- FOOTER SECTION -->
+<!-- Footer Section -->
 <footer class="footer text-white pt-5 pb-3">
   <div class="container">
     <div class="row">
@@ -575,15 +969,94 @@
   </div>
 </footer>
 
-<script type="application/ld+json">
-  {
-    "@context": "https://factura50.com",
-    "@type": "Product & Services",
-    "name": "Facturación Electrónica Simplificada",
-    "description": "Factura50 ofrece soluciones de facturación electrónica aprobadas por el SRI.",
-    "brand": "Factura50"
-  }
-</script>
+<script>
+  // para contraer y expandir las preguntas frecuentes - efecto acordeon
+  document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', event => {
+        const answer = item.nextElementSibling;
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    });
+  });
+
+  // para mostrar y ocultar los blogs
   
+  function showBlog(blogNumber) {
+    for (let index = 1; index < 3; index++) {
+        const blogPost = document.getElementById(`blog-post-${index}`);
+        blogPost.style.display = 'none';
+    }
+
+    const blogPost = document.getElementById(`blog-post-${blogNumber}`);
+    if (blogPost) {
+        blogPost.style.display = 'block';
+        scrollToSection(blogPost,{ offset: 80 });
+    }
+  }
+
+
+  function hideBlog(blogNumber) {
+    const blogPost = document.getElementById(`blog-post-${blogNumber}`);
+    if (blogPost) {
+        blogPost.style.display = 'none';
+        scrollToSection("blog",{ offset: 80 });
+    }
+  }
+
+
+  function scrollToSection(sectionName, options = {}) {
+    // Valores predeterminados para las opciones
+    const defaultOptions = {
+        selectorType: 'id',      // Por defecto busca por ID
+        dataAttribute: 'section', // Atributo data por defecto
+        offset: 0,               // Sin desplazamiento por defecto
+        behavior: 'smooth'       // Scroll suave por defecto
+    };
+    
+    // Combinar opciones predeterminadas con las proporcionadas
+    const settings = {...defaultOptions, ...options};
+    
+    // Crear el selector adecuado según el tipo
+    let selector;
+    switch (settings.selectorType.toLowerCase()) {
+        case 'class':
+        selector = `.${sectionName}`;
+        break;
+        case 'data':
+        selector = `[data-${settings.dataAttribute}="${sectionName}"]`;
+        break;
+        case 'id':
+        default:
+        selector = `#${sectionName}`;
+        break;
+    }
+    
+    // Buscar el elemento en el DOM
+    const section = document.querySelector(selector);
+    
+    // Si no se encuentra el elemento, mostrar un error y retornar falso
+    if (!section) {
+        console.error(`La sección "${sectionName}" no fue encontrada con el selector "${selector}"`);
+        return false;
+    }
+    
+    // Calcular la posición de la sección
+    const sectionPosition = section.getBoundingClientRect().top;
+    const offsetPosition = sectionPosition + window.pageYOffset - settings.offset;
+    
+    // Realizar el scroll
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: settings.behavior
+    });    
+    return true;
+}
+
+
+</script>
+
 </body>
 </html>
