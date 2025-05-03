@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Facturación electrónica, Factura Electrónica, Facturación Electrónica para profesionales, E-Commerce Tienda on line, Facturación Electrónica on line"/>
+  <title>Factura50 - Crear Cuenta</title>
+  <link rel="icon" href="img/logo-factura50.png">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/sweetalert.css">
+  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+  <script>
+      Weglot.initialize({
+          api_key: 'wg_d4c6b11c1bf01385028196e442001b5b2'
+      });
+  </script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LKY5VL4GSZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LKY5VL4GSZ');
+</script>
+<body>
+  <section class="hero">
+    <div class="container">
+      <div  translate="no" class="hero-content text-center">
+        <h1>FACTURA<span class="text-primary">50</span></h1>
+      </div>
+
+      <div class="text-center text-muted">
+        <h2>Crear cuenta</h2>
+      </div>
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-md-6 mt-4 text-dark">
+          <h2 class="mx-2"><strong>Facturación Electrónica</strong></h2>
+        </div>
+
+        <div class="col-md-6  mt-4">
+          <div class="login-box-body contact-form-container p-4">
+            <form action="" method="">
+              <div class="form-group">
+                <fieldset>
+                  <legend>Planes</legend>
+                  <br>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" value="1" name="plan" id="planmini">Mini
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" value="2" name="plan" id="planbasic">Basic
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" value="3" name="plan" id="planpro">Pro
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" value="4" name="plan" id="planpremium">Premium
+                    </label>
+                  </div>
+                  <span class="text-danger invisible" id="faltaPlan">Por favor elija un plan, gracias.</span>
+                </fieldset>            
+              </div>
+              <br>
+              <div class="form-group">
+                <input type="email" name="usuario" id="usuario" class="w3-input form-control" placeholder="Correo">
+                <span class="text-danger invisible" id="yaExiste">Nombre de usuario ya existe</span>
+              </div>
+              <div class="form-group">
+                <input type="password" name="clave" id="clave" class="w3-input form-control" placeholder="Contraseña">
+                <span class="text-danger invisible" id="faltaClave">Por favor ingrese un password (mínimo 8 caracteres)</span>
+              </div>
+              <div class="form-group">
+                <input type="password" name="clave2" id="clave2" class="w3-input form-control" placeholder="Confirmar contraseña">
+                <span class="text-danger invisible" id="faltaClave2">Contraseña no coincide</span>
+              </div>
+              <br>
+              <button type="button" class="btn btn-primary btn-block btn-flat" id="botonSubmit"> Crear cuenta </button>
+            </form>
+            <br><br>
+            <a href="#" id="condiciones" class="text-dark" style="display: none;">Terminos y condiciones</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+  <footer class="text-center" style="background: linear-gradient(to right, #4a6988, #4ca1af);">
+    <p>&copy; <strong translate="no">Factura50</strong></p>
+  </footer>
+  <script src="js/cookies.js"></script>
+  <script src="js/crearcuenta.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+
+</body>
+</html>
